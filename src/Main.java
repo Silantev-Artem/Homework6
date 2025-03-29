@@ -147,9 +147,12 @@ public class Main {
             }
 
         System.out.println("\nЗадание 8");
-        int yearTask10 = 0;
-        for ( ;yearTask10 < 2125; yearTask10 += 79) {
-            if (yearTask10 > 1825 && yearTask10 < 2125) {
+        int currentYear = 2025;
+        int beginYear = currentYear - 200;
+        int endYear = currentYear + 100;
+
+        for (int yearTask10 = 0 ; yearTask10 < endYear; yearTask10 += 79) {
+            if (yearTask10 >beginYear && yearTask10 < endYear) {
                 System.out.println(yearTask10);
             }
         }
