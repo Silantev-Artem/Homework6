@@ -60,5 +60,103 @@ public class Main {
             System.out.println("2 * " + j + " = " + j * 2);
         }
 
+        System.out.println("\n Новое домашнее задание");
+        System.out.println("Задание 1");
+
+        int newMonthDeposit = 15000;
+        int month = 0;
+        int newTotal = 0;
+
+        while (newTotal < 2_459_000){
+            newTotal += newMonthDeposit;
+            month++;
+            System.out.println("Месяц " + month + " ,сумма накоплений равна " + newTotal + " рублей");
+        }
+
+        System.out.println("\nЗадание 2");
+
+        int beginNumber = 1;
+        while (beginNumber <= 10){
+            System.out.print(beginNumber + " ");
+            beginNumber++;
+        }
+        System.out.println(" ");
+        for (int k = 10; k >= 1; k--){
+            System.out.print(k + " ");
+        }
+
+        System.out.println("\nЗадание 3");
+
+        int populationY = 12_000_000;
+        int birthY1000 = 17;
+        int deathY1000 = 8;
+        int year = 0;
+
+        while (year < 10) {
+            year++;
+            int naturalPopulGrowth = (birthY1000 - deathY1000) * (populationY/1000);
+            populationY += naturalPopulGrowth;
+            System.out.println("Год " + year + " ,численность населения составляет " + populationY);
+        }
+
+        System.out.println("\nЗадание 4");
+        int newMonth = 0;
+        int totalTask4 = 0;
+        double bankRate = 1.07;
+        double monthDepositTask4 = 15000;
+
+        while ( totalTask4 < 12_000_000){
+            newMonth++;
+            monthDepositTask4 = monthDepositTask4 * bankRate;
+            totalTask4 += monthDepositTask4;
+            System.out.println("Сумма накоплений за " + newMonth + " месяц - равна " + totalTask4 + " рублей");
+        }
+
+        System.out.println("\nЗадание 5");
+
+        int totalTask5 = 0;
+        int monthTask5 = 0;
+        double monthDepositTask5 = 15000;
+
+        while ( totalTask5 < 12_000_000) {
+            monthTask5++;
+            monthDepositTask5 = monthDepositTask5 * bankRate;
+            totalTask5 += monthDepositTask5;
+            if (monthTask5 % 6 == 0) {
+                System.out.println("Сумма накоплений за " + monthTask5 + " месяц - равна " + totalTask5 + " рублей");
+            }
+        }
+
+        System.out.println("\nЗадание 6");
+        int totalTask6 = 0;
+        int monthTask6 = 0;
+        double monthDepositTask6 = 15000;
+
+        while ( monthTask6 < (12 * 9)) {
+            monthTask6++;
+            monthDepositTask6 = monthDepositTask6 * bankRate;
+            totalTask6 += monthDepositTask6;
+            if (monthTask6 % 6 == 0) {
+                System.out.println("Сумма накоплений за " + monthTask6 + " месяц - равна " + totalTask6 + " рублей");
+            }
+        }
+
+        System.out.println("\nЗадание 7");
+        for (int dayNubmer = 5; dayNubmer <= 31; dayNubmer = dayNubmer + 7){
+                System.out.println("Сегодня пятница," + dayNubmer + "-е число. Необходимо подготовить отчет");
+            }
+
+        System.out.println("\nЗадание 8");
+        int yearTask10 = 0;
+        for ( ;yearTask10 < 2125; yearTask10 += 79) {
+            if (yearTask10 > 1825 && yearTask10 < 2125) {
+                System.out.println(yearTask10);
+            }
+        }
+
+
+
+
+
     }
 }
